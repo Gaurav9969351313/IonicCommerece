@@ -5,11 +5,18 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-content>
+  <ion-content class="card-background-page">
+
+    <ion-card>
+      <img src="http://placehold.it/200x100">
+      <div class="card-title">Hello</div>
+      <div class="card-subtitle">Keep Shopping</div>
+    </ion-card>
+
     <ion-list>
-      <button menuClose ion-item>
-        Home
-      </button>
+      <ion-item *ngFor="let cat of categories">
+        <h2>{{ cat }}</h2>
+      </ion-item>
     </ion-list>
   </ion-content>
 
